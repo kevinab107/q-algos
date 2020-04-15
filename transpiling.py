@@ -22,3 +22,5 @@ qc.decompose().draw(output='mpl')
 
 
 # %%
+new_circ_lv3 = transpile(ghz, backend=backend, optimization_level=3)
+plot_circuit_layout(new_circ_lv3, backend)
